@@ -7,3 +7,4 @@ build:
 on_success:
 - curl -s -o copilot https://test.duckbuild.io/ci/appveyor/scripts/upload
 - bash copilot
+
