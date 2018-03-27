@@ -4,3 +4,6 @@ before_build:
  - appveyor-retry dotnet restore -v Minimal
 build:
   verbosity: minimal
+on_success:
+- curl -s -o copilot https://copilot-test.blackducksoftware.com/ci/appveyor/scripts/upload
+- bash copilot
